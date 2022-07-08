@@ -1,8 +1,15 @@
 # Module Federation Shared Library Prototype
 
-- Storybook
-- Typescript
-- Jest
+This repo provides basic config for the following:
+
+- Storybook 
+- Providing type definitions that can be used by hosts
+- Jest (unit testing)
+
+Tools:
+
+- This project uses [pnpm](https://pnpm.io) as a node package manager
+- This project uses [asdf](https://asdf-vm.com) to manage software versions, e.g. node version
 
 ## Getting type definitions
 
