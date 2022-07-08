@@ -11,3 +11,7 @@ Type definitions are served from `${baseUrl}/types.txt`. To get up-to-date type 
 ```
 curl http://localhost:8080/types.txt > shared.d.ts
 ```
+
+## Storybook
+
+To see examples and documentation [see here](https://goughjo03.github.io/library-prototype/?path=/story/button--basic-button).
