@@ -117,3 +117,6 @@ dist
 
 # storybook
 docs-build
+
+# type definitions for hosts
+tempTypes.d.ts

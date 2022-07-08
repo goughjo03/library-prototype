@@ -1,3 +1,5 @@
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   output: {
     publicPath: "http://localhost:8080/",
@@ -35,5 +37,9 @@ module.exports = {
     ],
   },
 
-  plugins: [],
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{ from: "static/shared.d.ts", to: "types.txt" }],
+    }),
+  ],
 };
