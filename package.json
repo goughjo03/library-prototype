@@ -31,7 +31,6 @@
     "autoprefixer": "^10.1.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.5",
-    "core-common": "link:@types/@storybook/core-common",
     "css-loader": "^6.3.0",
     "html-webpack-plugin": "^5.3.2",
     "postcss": "^8.2.1",
