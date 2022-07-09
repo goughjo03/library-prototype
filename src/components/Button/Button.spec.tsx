@@ -1,8 +1,8 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import Button from ".";
+import { render } from "../../../test-utils/customRender";
 
 describe("Button", () => {
   test("shuod call callback when pressed", async () => {

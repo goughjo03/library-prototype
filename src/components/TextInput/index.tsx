@@ -31,7 +31,7 @@ const TextInput = ({ label, onChange, value, placeholder }: TextInputProps) => {
   const id = useId();
   return (
     <div>
-      {label && <label htmlFor={id}>{label}</label>}
+      <label htmlFor={id}>{label}</label>
       <input
         id={id}
         type="text"
