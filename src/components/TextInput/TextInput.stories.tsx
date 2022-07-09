@@ -33,4 +33,5 @@ export const WithoutPlaceholder = Template.bind({});
 WithoutPlaceholder.args = {
   /*👇 The args you need here will depend on your component */
   placeholder: undefined,
+  label: "This is a label",
 };

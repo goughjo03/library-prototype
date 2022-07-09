@@ -21,6 +21,6 @@
       "*": ["node_modules/*"]
     }
   },
-  "exclude": ["**/*.spec.ts", "**/*.stories.tsx"],
+  "exclude": ["**/*.spec.tsx", "**/*.stories.tsx"],
   "include": ["src/**/*.tsx"]
 }

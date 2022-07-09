@@ -38,6 +38,7 @@ const modifyFile = () => {
           `declare module "${moduleName}/`
         );
         line = line.replace('/index"', '"');
+        line = line.replace('/components/', '/');
       }
       result += line + "\n";
     });

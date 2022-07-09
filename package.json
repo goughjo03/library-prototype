@@ -10,7 +10,9 @@
     "start:live": "webpack serve --config ./webpack/module-federation.config.js --open --mode development --live-reload --hot",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -o docs-build",
-    "types:generate": "tsc --project ./generate-types-config.json && node ./generate-types.js"
+    "types:gen": "tsc --project ./generate-types-config.json && node ./generate-types.js",
+    "unit:test:coverage": "jest --coverage",
+    "unit:test:debug": "jest -o --watch --coverage=false"
   },
   "license": "MIT",
   "author": {
@@ -29,8 +31,12 @@
     "@storybook/addon-links": "^6.5.9",
     "@storybook/core-common": "^6.5.9",
     "@storybook/react": "^6.5.9",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.2",
+    "@testing-library/dom": "^8.14.0",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
+    "@types/jest": "^28.1.4",
+    "@types/react": "18",
+    "@types/react-dom": "18",
     "autoprefixer": "^10.1.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.5",
@@ -38,6 +44,8 @@
     "css-loader": "^6.3.0",
     "fs-extra": "^10.1.0",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
     "postcss": "^8.2.1",
     "postcss-loader": "^4.1.0",
     "require-from-string": "^2.0.2",
@@ -48,7 +56,7 @@
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "18",
+    "react-dom": "18"
   }
 }

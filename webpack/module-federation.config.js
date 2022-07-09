@@ -12,8 +12,8 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Button": "./src/components/Button/index.tsx",
-        "./TextInput": "./src/components/TextInput/index.tsx",
+        "./Button": "./src/components/Button",
+        "./TextInput": "./src/components/TextInput",
       },
       shared: {
         ...deps,

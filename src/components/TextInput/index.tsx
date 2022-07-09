@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useId, useState } from "react";
 
 export interface TextInputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
+  label?: string;
   placeholder?: string;
 }
 
@@ -20,20 +21,25 @@ export const useTextInput = (initialValue: string = "") => {
 };
 
 /**
- * 
+ *
  * @param onChange - function to call when the text input changes
  * @param value - the current value of the text input
  * @param placeholder - the placeholder text to display in the text input
- * @returns 
+ * @returns
  */
-const TextInput = ({ onChange, value, placeholder }: TextInputProps) => {
+const TextInput = ({ label, onChange, value, placeholder }: TextInputProps) => {
+  const id = useId();
   return (
-    <input
-      type="text"
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-    />
+    <div>
+      {label && <label htmlFor={id}>{label}</label>}
+      <input
+        id={id}
+        type="text"
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
+    </div>
   );
 };
 

@@ -1,5 +1,12 @@
 /// <reference types="react" />
-declare module "shared/components/Button" {
+declare module "shared/App" {
+    interface Props {
+        message?: string;
+    }
+    const App: ({ message }: Props) => JSX.Element;
+    export default App;
+}
+declare module "shared/Button" {
     import React from "react";
     interface ButtonProps {
         onClick: () => void;
@@ -8,7 +15,7 @@ declare module "shared/components/Button" {
     const Button: React.FC<ButtonProps>;
     export default Button;
 }
-declare module "shared/components/TextInput" {
+declare module "shared/TextInput" {
     import React from "react";
     export interface TextInputProps {
         onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;

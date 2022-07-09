@@ -14,6 +14,7 @@ export default {
   */
   title: 'Button',
   component: Button,
+  argTypes: { onClick: { action: 'clicked' } },
 } as ComponentMeta<typeof Button>;
 
 //👇 We create a “template” of how args map to rendering
