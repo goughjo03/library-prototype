@@ -17,6 +17,8 @@ jobs:
         run: | # Install npm packages and build the Storybook files
           pnpm install
           pnpm run storybook:build
+      - name: Unit Test (JEST)
+        run:  pnpm unit:test:coverage
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
